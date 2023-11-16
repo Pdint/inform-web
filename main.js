@@ -7,8 +7,9 @@ const handleMyMenu = (event) => {
     myMenuTrigger.classList.toggle('is-active');
   };
 
-  const init = () => {
-    myMenuTrigger.addEventListener('click', handleMyMenu);
-  };
-  
-  init();
+const init = () => {
+   myMenuTrigger.addEventListener('click', handleMyMenu);
+   };
+
+
+init();
