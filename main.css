@@ -1,0 +1,4 @@
+.dropdown {  
+    /* dropdown은 absolute로 뿌려줘야 하므로 부모를 position: relative로 잡아준다 */
+      position: relative;
+    }
