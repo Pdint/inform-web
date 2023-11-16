@@ -15,3 +15,17 @@
   border: 2px solid #8e8e8e;
   content: '';
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 225px;
+  top: 37px;
+  left: -175px;
+  padding: 10px 0;
+  background-color: #fff;
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  font-size: 14px;
+}
