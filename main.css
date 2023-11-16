@@ -2,3 +2,16 @@
     /* dropdown은 absolute로 뿌려줘야 하므로 부모를 position: relative로 잡아준다 */
       position: relative;
     }
+
+.dropdown .inform:hover::after
+.dropdown .inform.is-active::after{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid #8e8e8e;
+  content: '';
+}
