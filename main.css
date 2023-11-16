@@ -2,7 +2,7 @@
     /* dropdown은 absolute로 뿌려줘야 하므로 부모를 position: relative로 잡아준다 */
       position: relative;
     }
-
+/*
 .dropdown .inform:hover::after
 .dropdown .inform.is-active::after{
   position: absolute;
@@ -15,7 +15,7 @@
   border: 2px solid #8e8e8e;
   content: '';
 }
-
+*/
 .dropdown-content {
   display: none;
   position: absolute;
