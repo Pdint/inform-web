@@ -29,3 +29,9 @@
   border-radius: 5px;
   font-size: 14px;
 }
+
+.dropdown-content.is-active {
+  /* dropdown 메뉴는 기본적으로 display: none 상태이고, JS를 통해 toggling된 css에서 display: block을 주었다. */
+    display: block;
+  }
+
