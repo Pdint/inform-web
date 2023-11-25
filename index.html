@@ -1,13 +1,33 @@
-<div class:"user-action-item dropdown">
-    <button type="button" class="dropdown-button inform">
-    </button>
-    
-    <div class="dropdown-content">  
-        <ls class="dropdown-list">  
-            <a href="#">link 1</a>
-            <a href="#">link 2</a>
-            <a href="#">link 3</a>
-        </ls>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정보 모음</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>호출</h1>
+
+    <label for="select">데이터 선택:</label>
+    <select id="select">
+      <option value="1">사용자 1</option>
+      <option value="2">사용자 2</option>
+      <!-- 필요한 만큼의 옵션을 추가할 수 있습니다. -->
+    </select>
+
+    <button id="submitButton">정보 송출</button>
+
+    <div id="result">
+      <img id="userImage" alt="User Image" />
+      <!-- API로부터 받아온 이미지를 표시할 영역 -->
+      <div id="userInfo">
+        <!-- API로부터 받아온 결과를 표시할 영역 -->
+      </div>
     </div>
-</div>
- 
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
