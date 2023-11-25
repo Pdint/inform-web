@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function fetchData(userId) {
   // 가짜 API URL (JSONPlaceholder 사용)
-  const apiUrl = `https://jsonplaceholder.typicode.com/users/${userId}`;
+  const apiUrl = `https://jsonplaceholder.typicode.com/posts/${userId}`;
 
   // API 호출
   fetch(apiUrl)
