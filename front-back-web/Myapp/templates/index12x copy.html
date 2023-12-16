@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Django에서 Pandas HTML 출력</title>
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+  <div class="container">
+    <h1>오늘자 정보</h1>
+    <label for="select">게임 선택</label>
+    <select id="select">
+        <option value="1">블루 아카이브</option>
+        <option value="2">원신</option>
+    </select>
+
+    <button id="submitButton">출력</button>
+
+    <div id="result">
+      <img id="userImage" alt="User Image" src="{% static 'blue_archive.jpg' %}" />
+      <!-- 미리 정의한 이미지를 표시할 영역 -->
+      <div id="userInfo"></div>
+        <!-- 결과를 표시할 영역 -->
+    </div>
+  </div>
+  <script src="{% static 'script12.js' %}"></script>
+
+ <!-- JSON 데이터를 담을 hidden 엘리먼트를 추가합니다. -->
+ <input type="hidden" id="jsonData" value="{{ json_data|safe }}">
+ 
+</body>
+</html>
+
+
+
+
+
+    <!--
+    <label for="select">게임 선택</label>
+    <select id="select" name="game_select">
+      {% for value in game_values %}
+        <option value="{{ value }}">블루 아카이브 {{ value }}</option>
+        <option value="{{ value }}">원신 {{ value }}</option>
+      {% endfor %}
+    </select>
+  -->
+
+
+  <!-- MySQLog를 통한 html 연결 실패
+    <h2>MySQL 정보</h2>
+    <table class="table-contents" style="padding:10px">
+    <tr>
+      <th>제목</th>
+      <th>내용</th>
+    </tr>
+    {% for post in posts %}
+      <tr>
+        <td>{{post.post_title}}</td>
+        <td>{{post.post_content}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+ -->
